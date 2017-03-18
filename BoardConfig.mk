@@ -138,3 +138,8 @@ BOARD_HARDWARE_CLASS := \
     hardware/cyanogen/cmhw
 
 -include vendor/motorola/shamu/BoardConfigVendor.mk
+
+# Enable Snapdragon LLVM
+ifneq ($(HOST_OS),darwin)
+TARGET_USE_SDCLANG := true
+endif
