@@ -143,3 +143,6 @@ BOARD_HARDWARE_CLASS := \
 ifneq ($(HOST_OS),darwin)
 TARGET_USE_SDCLANG := true
 endif
+
+# No recovery
+TARGET_NO_RECOVERY := true
