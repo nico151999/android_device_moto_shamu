@@ -435,4 +435,4 @@ ADDITIONAL_DEFAULT_PROPERTIES += \
 
 # Browser
 PRODUCT_PACKAGES += \
-    Gello
+    TugaBrowser
