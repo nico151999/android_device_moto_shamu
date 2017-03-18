@@ -440,3 +440,7 @@ PRODUCT_PACKAGES += \
 # GMail
 PRODUCT_PACKAGES += \
     GMail
+
+# KernelAdiutor
+PRODUCT_PACKAGES += \
+    KernelAdiutor
