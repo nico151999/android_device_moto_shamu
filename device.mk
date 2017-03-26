@@ -435,11 +435,7 @@ ADDITIONAL_DEFAULT_PROPERTIES += \
 
 # Browser
 PRODUCT_PACKAGES += \
-    TugaBrowser
-
-# GMail
-PRODUCT_PACKAGES += \
-    GMail
+    SWE
 
 # KernelAdiutor
 PRODUCT_PACKAGES += \
