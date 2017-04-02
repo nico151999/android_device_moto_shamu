@@ -145,4 +145,4 @@ TARGET_USE_SDCLANG := true
 endif
 
 # Enable Lineage's su
-WITH_SU := true
+USE_SU := true
