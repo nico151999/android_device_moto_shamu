@@ -13,19 +13,76 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<PreferenceScreen>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/about_beanstalk"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <add-resource type="PreferenceCategory"
+    <PreferenceCategory
+        android:key="about"
+        android:title="@string/about_beanstalk">
+
+        <!-- Changelog -->
+        <PreferenceScreen
+            android:key="changelog"
+            android:title="@string/changelog_beanstalk_title"
+            android:fragment="com.android.settings.beanstalk.Changelog" />
+
+        <!-- Donation -->
+        <Preference
+            android:key="beanstalk_donation"
+            android:title="@string/beanstalk_donation_title"
+            android:summary="@string/beanstalk_donation_summary" />
+
+	<!-- Slack -->
+        <Preference
+            android:key="slack"
+            android:title="@string/join_slack_title"
+            android:summary="@string/join_slack_summary" />
+
+        <!-- Share -->
+        <Preference
+            android:key="share"
+            android:title="@string/share_beanstalk_title"
+            android:summary="@string/share_beanstalk_summary" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="web"
+        android:title="@string/beanstalk_on_web">
+
+        <!-- downloads -->
+        <Preference
+            android:key="beanstalk_downloads"
+            android:title="@string/beanstalk_downloads_title"
+            android:summary="@string/beanstalk_downloads_summary" />
+
+        <!-- Github -->
+        <Preference
+            android:key="beanstalk_source"
+            android:title="@string/beanstalk_source_title"
+            android:summary="@string/beanstalk_source_summary" />
+
+        <!-- GooglePlus -->
+        <Preference
+            android:key="beanstalk_facebook"
+            android:title="@string/beanstalk_facebook_title"
+            android:summary="@string/beanstalk_facebook_summary" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="developer_information"
         android:title="Information about the developer">
 
         <!-- developer information -->
-        <add-resource type="Preference"
+        <Preference
             android:key="developer"
             android:title="Krassermensch"
             android:summary="I am a German boy maintaining and developing ROMs, especially Beanstalk, for fun. If the builds I made seem stable to me I share them with the community. Though I add many features to my builds the work of the main developer of Beanstalk Scott must not be diminished." />
 
-    </add-resource>
+    </PreferenceCategory>
 
 </PreferenceScreen>
 
