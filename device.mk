@@ -440,3 +440,6 @@ PRODUCT_PACKAGES += \
 # KernelAdiutor
 PRODUCT_PACKAGES += \
     KernelAdiutor
+
+# Use Lineage SU solution
+USE_SU := true
